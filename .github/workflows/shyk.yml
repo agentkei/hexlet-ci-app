@@ -9,10 +9,11 @@ jobs:
         uses: snyk/actions/node@master
         env:
           SNYK_TOKEN: ${{ secrets.a939320b-2f30-49aa-b696-047983c04076 }}
-      
-      - uses: actions/setup-node@v3
-          with: 
-            node-vers: 16
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
       - run: npm ci
       - run: npm test
+
         
