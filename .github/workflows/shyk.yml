@@ -8,7 +8,7 @@ jobs:
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/node@master
         env:
-          SNYK_TOKEN: ${{ secrets.a939320b-2f30-49aa-b696-047983c04076 }}
+          SNYK_TOKEN: ${{ secrets.b0a4d22f-6271-4612-b126-dfd806dc5011 }}
       - name: Setup Node.js environment
         uses: actions/setup-node@v2
         with:
